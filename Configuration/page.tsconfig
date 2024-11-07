@@ -1,0 +1,48 @@
+mod.wizards.newContentElement.wizardItems {
+    sections {
+        header = Sections
+        elements {
+            section-1col {
+                iconIdentifier = content-container-columns-1
+                title = Einfache Section
+                description = Eine einfache Section mit nur einer Spalte
+                tt_content_defValues {
+                    CType = section-1col
+                }
+            }
+            section-2cols {
+                iconIdentifier = content-container-columns-2
+                title = Section mit 2 Spalten
+                description = Eine Section mit 2 Spalten
+                tt_content_defValues {
+                    CType = section-2cols
+                }
+            }
+            section-3cols {
+                iconIdentifier = content-container-columns-3
+                title = Section mit 3 Spalten
+                description = Eine Section mit 3 Spalten
+                tt_content_defValues {
+                    CType = section-3cols
+                }
+            }
+            section-33-66 {
+                iconIdentifier = content-container-columns-2
+                title = Section mit Aufteilung 33/66
+                description = Eine Section mit zwei Spalten, eine Schmale, eine Große
+                tt_content_defValues {
+                    CType = section-33-66
+                }
+            }
+            section-66-33 {
+                iconIdentifier = content-container-columns-2
+                title = Section mit Aufteilung 66/33
+                description = Eine Section mit zwei Spalten, eine Große, eine Schmale
+                tt_content_defValues {
+                    CType = section-66-33
+                }
+            }
+        }
+        show = *
+    }
+}
