@@ -1,48 +1,78 @@
+TCEFORM.tt_content.CType.removeItems = header, text, textpic, image, textmedia, bullets, table, uploads, div, html
+
 mod.wizards.newContentElement.wizardItems {
-    sections {
-        header = Sections
-        elements {
-            section-1col {
-                iconIdentifier = content-container-columns-1
-                title = Einfache Section
-                description = Eine einfache Section mit nur einer Spalte
-                tt_content_defValues {
-                    CType = section-1col
-                }
-            }
-            section-2cols {
-                iconIdentifier = content-container-columns-2
-                title = Section mit 2 Spalten
-                description = Eine Section mit 2 Spalten
-                tt_content_defValues {
-                    CType = section-2cols
-                }
-            }
-            section-3cols {
-                iconIdentifier = content-container-columns-3
-                title = Section mit 3 Spalten
-                description = Eine Section mit 3 Spalten
-                tt_content_defValues {
-                    CType = section-3cols
-                }
-            }
-            section-33-66 {
-                iconIdentifier = content-container-columns-2
-                title = Section mit Aufteilung 33/66
-                description = Eine Section mit zwei Spalten, eine Schmale, eine Große
-                tt_content_defValues {
-                    CType = section-33-66
-                }
-            }
-            section-66-33 {
-                iconIdentifier = content-container-columns-2
-                title = Section mit Aufteilung 66/33
-                description = Eine Section mit zwei Spalten, eine Große, eine Schmale
-                tt_content_defValues {
-                    CType = section-66-33
-                }
-            }
-        }
-        show = *
-    }
+	menu {
+		header = Menü Elemente
+	}
+	forms {
+		header = Formular Elemente
+	}
+	text_elements {
+		header = Text Elemente
+		elements {
+			element-headline {
+				iconIdentifier = content-header
+				title = Überschrift
+				description =
+				tt_content_defValues {
+					CType = element-headline
+				}
+			}
+			element-text {
+				iconIdentifier = content-text
+				title = Text
+				description =
+				tt_content_defValues {
+					CType = element-text
+				}
+			}
+			element-html {
+				iconIdentifier = content-special-html
+				title = HTML
+				description =
+				tt_content_defValues {
+					CType = element-html
+				}
+			}
+			element-table {
+				iconIdentifier = content-table
+				title = Tabelle
+				description =
+				tt_content_defValues {
+					CType = element-table
+				}
+			}
+		}
+		show = *
+	}
+	media_elements {
+		header = Medien Elemente
+		elements {
+			element-image {
+				iconIdentifier = content-image
+				title = Bild
+				description =
+				tt_content_defValues {
+					CType = element-image
+				}
+			}
+			element-video {
+				iconIdentifier = content-media
+				title = Video
+				description =
+				tt_content_defValues {
+					CType = element-video
+				}
+			}
+			element-file {
+				iconIdentifier = module-documentation
+				title = Dokument
+				description =
+				tt_content_defValues {
+					CType = element-file
+				}
+			}
+		}
+		show = *
+	}
 }

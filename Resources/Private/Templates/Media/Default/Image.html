@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:ce="http://typo3.org/ns/TYPO3/CMS/FluidStyledContent/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Element"/>
+<f:section name="Content">
+    <f:for each="{files}" as="file">
+        <figure class="image">
+            <f:if condition="{file.link}">
+                <f:then>
+                    <f:link.typolink parameter="{file.link}" title="{file.title}">
+                        <f:image class="image-embed-item" image="{file}" width="600c" height="400c" alt="{file.alternative}" title="{file.title}" loading="{settings.media.lazyLoading}" decoding="{settings.media.imageDecoding}" />
+                    </f:link.typolink>
+                </f:then>
+                <f:else>
+                    <f:if condition="{data.image_zoom}">
+                        <f:then>
+                            <ce:link.clickEnlarge image="{file}" configuration="{settings.media.popup}">
+                                <f:image class="image-embed-item" image="{file}" width="600c" height="400c" alt="{file.alternative}" title="{file.title}" loading="{settings.media.lazyLoading}" decoding="{settings.media.imageDecoding}" />
+                            </ce:link.clickEnlarge>
+                        </f:then>
+                        <f:else>
+                            <f:image class="image-embed-item" image="{file}" width="600c" height="400c" alt="{file.alternative}" title="{file.title}" loading="{settings.media.lazyLoading}" decoding="{settings.media.imageDecoding}" />
+                        </f:else>
+                    </f:if>
+                </f:else>
+            </f:if>
+            <f:if condition="{file.description}">
+                <figcaption class="image-caption">
+                    {file.description -> f:format.nl2br()}
+                </figcaption>
+            </f:if>
+        </figure>
+    </f:for>
+</f:section>
+</html>

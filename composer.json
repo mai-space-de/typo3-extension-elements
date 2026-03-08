@@ -16,6 +16,9 @@
   "extra": {
     "typo3/cms": {
       "extension-key": "elements"
+    },
+    "branch-alias": {
+      "dev-main": "13.0.x-dev"
     }
   }
 }

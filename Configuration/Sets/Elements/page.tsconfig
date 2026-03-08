@@ -1,0 +1,79 @@
+
+TCEFORM.tt_content.CType.removeItems = header, text, textpic, image, textmedia, bullets, table, uploads, div, html
+
+mod.wizards.newContentElement.wizardItems {
+    menu {
+        header = Menü Elemente
+    }
+    forms {
+        header = Formular Elemente
+    }
+    text_elements {
+        header = Text Elemente
+        elements {
+            element-headline {
+                iconIdentifier = content-header
+                title = Überschrift
+                description =
+                tt_content_defValues {
+                    CType = element-headline
+                }
+            }
+            element-text {
+                iconIdentifier = content-text
+                title = Text
+                description =
+                tt_content_defValues {
+                    CType = element-text
+                }
+            }
+            element-html {
+                iconIdentifier = content-special-html
+                title = HTML
+                description =
+                tt_content_defValues {
+                    CType = element-html
+                }
+            }
+            element-table {
+                iconIdentifier = content-table
+                title = Tabelle
+                description =
+                tt_content_defValues {
+                    CType = element-table
+                }
+            }
+        }
+        show = *
+    }
+    media_elements {
+        header = Medien Elemente
+        elements {
+            element-image {
+                iconIdentifier = content-image
+                title = Bild
+                description =
+                tt_content_defValues {
+                    CType = element-image
+                }
+            }
+            element-video {
+                iconIdentifier = content-media
+                title = Video
+                description =
+                tt_content_defValues {
+                    CType = element-video
+                }
+            }
+            element-file {
+                iconIdentifier = module-documentation
+                title = Dokument
+                description =
+                tt_content_defValues {
+                    CType = element-file
+                }
+            }
+        }
+        show = *
+    }
+}

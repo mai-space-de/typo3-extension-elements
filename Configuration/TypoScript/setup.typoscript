@@ -1,0 +1,94 @@
+tt_content {
+	element-headline =< tt_content.header
+	element-headline {
+		templateName = Headline
+		templateRootPaths {
+			10 = EXT:elements/Resources/Private/Templates/Text/
+		}
+		partialRootPaths {
+			20 = EXT:elements/Resources/Private/Partials/
+		}
+		layoutRootPaths {
+			20 = EXT:elements/Resources/Private/Layouts/
+		}
+	}
+	element-text =< tt_content.text
+	element-text {
+		templateName = Text
+		templateRootPaths {
+			10 = EXT:elements/Resources/Private/Templates/Text/
+		}
+		partialRootPaths {
+			20 = EXT:elements/Resources/Private/Partials/
+		}
+		layoutRootPaths {
+			20 = EXT:elements/Resources/Private/Layouts/
+		}
+	}
+	element-html =< tt_content.html
+	element-html {
+		templateName = Html
+		templateRootPaths {
+			10 = EXT:elements/Resources/Private/Templates/Text/
+		}
+		partialRootPaths {
+			20 = EXT:elements/Resources/Private/Partials/
+		}
+		layoutRootPaths {
+			20 = EXT:elements/Resources/Private/Layouts/
+		}
+	}
+	element-table =< tt_content.table
+	element-table {
+		templateName = Table
+		templateRootPaths {
+			10 = EXT:elements/Resources/Private/Templates/Text/
+		}
+		partialRootPaths {
+			20 = EXT:elements/Resources/Private/Partials/
+		}
+		layoutRootPaths {
+			20 = EXT:elements/Resources/Private/Layouts/
+		}
+	}
+
+	element-image =< tt_content.image
+	element-image {
+		templateName = Image
+		templateRootPaths {
+			10 = EXT:elements/Resources/Private/Templates/Media/
+		}
+		partialRootPaths {
+			20 = EXT:elements/Resources/Private/Partials/
+		}
+		layoutRootPaths {
+			20 = EXT:elements/Resources/Private/Layouts/
+		}
+	}
+	element-video =< tt_content.textmedia
+	element-video {
+		templateName = Video
+		templateRootPaths {
+			10 = EXT:elements/Resources/Private/Templates/Media/
+		}
+		partialRootPaths {
+			20 = EXT:elements/Resources/Private/Partials/
+		}
+		layoutRootPaths {
+			20 = EXT:elements/Resources/Private/Layouts/
+		}
+	}
+	element-file =< tt_content.uploads
+	element-file {
+		templateName = File
+		templateRootPaths {
+			10 = EXT:elements/Resources/Private/Templates/Media/
+		}
+		partialRootPaths {
+			20 = EXT:elements/Resources/Private/Partials/
+		}
+		layoutRootPaths {
+			20 = EXT:elements/Resources/Private/Layouts/
+		}
+	}
+}
