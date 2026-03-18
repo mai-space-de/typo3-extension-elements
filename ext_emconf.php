@@ -3,7 +3,7 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Elements',
     'description' => 'A collection of content elements.',
-    'version' => '12.0.0',
+    'version' => '13.0.0',
     'state' => 'stable',
     'category' => 'templates',
     'author' => 'Joel Maximilian Mai',
@@ -11,7 +11,8 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => 'Maispace',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.4.0-12.4.99',
+            'typo3' => '13.4.22-13.4.99',
+            'visual_editor' => '1.0.0-1.99.99',
         ],
         'conflicts' => [
         ],
