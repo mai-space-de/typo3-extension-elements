@@ -1,10 +1,10 @@
 <?php
 
-(new \Maispace\Base\RegistrationHelper\CType('element-headline', 'Überschrift', 'content-header'))
+(new \Maispace\MaiBase\RegistrationHelper\CType('element-headline', 'Überschrift', 'content-header'))
     ->addDefaultHeaderPalette()
     ->register();
 
-(new \Maispace\Base\RegistrationHelper\CType('element-text', 'Text', 'content-text'))
+(new \Maispace\MaiBase\RegistrationHelper\CType('element-text', 'Text', 'content-text'))
     ->addCustomFields('bodytext')
     ->addColumnOverride('bodytext', [
         'config' => [
@@ -13,7 +13,7 @@
     ])
     ->register();
 
-(new \Maispace\Base\RegistrationHelper\CType('element-html', 'Html', 'content-special-html'))
+(new \Maispace\MaiBase\RegistrationHelper\CType('element-html', 'Html', 'content-special-html'))
     ->addCustomFields('bodytext')
     ->addColumnOverride('bodytext', [
         'config' => [
@@ -24,7 +24,7 @@
     ])
     ->register();
 
-(new \Maispace\Base\RegistrationHelper\CType('element-table', 'Tabelle', 'content-table'))
+(new \Maispace\MaiBase\RegistrationHelper\CType('element-table', 'Tabelle', 'content-table'))
     ->addCustomFields('bodytext')
     ->addColumnOverride('bodytext', [
         'config' => [
@@ -35,14 +35,14 @@
     ->register();
 
 
-(new \Maispace\Base\RegistrationHelper\CType('element-image', 'Bild', 'content-image'))
+(new \Maispace\MaiBase\RegistrationHelper\CType('element-image', 'Bild', 'content-image'))
     ->addCustomFields('image')
     ->register();
 
-(new \Maispace\Base\RegistrationHelper\CType('element-video', 'Video', 'content-media'))
+(new \Maispace\MaiBase\RegistrationHelper\CType('element-video', 'Video', 'content-media'))
     ->addCustomFields('media')
     ->register();
 
-(new \Maispace\Base\RegistrationHelper\CType('element-file', 'Dokument', 'module-documentation'))
+(new \Maispace\MaiBase\RegistrationHelper\CType('element-file', 'Dokument', 'module-documentation'))
     ->addCustomFields('media')
     ->register();

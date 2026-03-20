@@ -1,1 +1,1 @@
-@import 'EXT:elements/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:mai_elements/Configuration/TypoScript/setup.typoscript'

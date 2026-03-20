@@ -11,6 +11,8 @@
     }
   ],
   "require": {
+    "php": "^8.2",
+    "typo3/cms-core": "^13.4",
     "friendsoftypo3/visual-editor": "^1.0"
   },
   "autoload": {
