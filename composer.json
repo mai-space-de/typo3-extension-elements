@@ -1,24 +1,26 @@
 {
-  "name": "maispace/elements",
+  "name": "maispace/mai-elements",
   "type": "typo3-cms-extension",
   "description": "TYPO3 extension for content elements",
   "homepage": "https://www.maispace.de",
-  "authors": [{
-    "name": "Joel Maximilian Mai",
-    "email": "joel@maispace.de",
-    "role": "Lead Developer"
-  }],
+  "authors": [
+    {
+      "name": "Joel Maximilian Mai",
+      "email": "joel@maispace.de",
+      "role": "Lead Developer"
+    }
+  ],
   "require": {
     "friendsoftypo3/visual-editor": "^1.0"
   },
   "autoload": {
     "psr-4": {
-      "Maispace\\Elements\\": "Classes/"
+      "Maispace\\MaiElements\\": "Classes/"
     }
   },
   "extra": {
     "typo3/cms": {
-      "extension-key": "elements"
+      "extension-key": "mai_elements"
     },
     "branch-alias": {
       "dev-main": "13.0.x-dev"
