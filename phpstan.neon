@@ -4,4 +4,4 @@ includes:
 parameters:
 	level: max
 	paths:
-		- Classes
+		- ext_localconf.php
