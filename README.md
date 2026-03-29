@@ -1,24 +1,13 @@
-# maispace/elements — TYPO3 Content Elements
-
-[![CI](https://github.com/mai-space-de/typo3-extension-elements/actions/workflows/ci.yml/badge.svg)](https://github.com/mai-space-de/typo3-extension-elements/actions/workflows/ci.yml)
+# maispace/mai-elements — TYPO3 Extension
 [![PHP](https://img.shields.io/badge/PHP-8.2%2B-blue)](https://www.php.net/)
 [![TYPO3](https://img.shields.io/badge/TYPO3-13.4%20LTS-orange)](https://typo3.org/)
-[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
-A TYPO3 extension providing custom content elements for structured page building.
+A collection of custom content elements extending the default TYPO3 content element set. Owns the CKEditor rich text configuration and the TYPO3 form framework integration for the project. All element templates reference `mai_theme` components.
 
-## Features
+**Requires:** TYPO3 13.4 LTS / 14.0 · PHP 8.2+
 
-- Custom content element types for TYPO3 CMS
-- Fluid templates for text, media, and layout elements
-- TypoScript configuration via TYPO3 Site Sets
-- Compatible with TYPO3 13.4 LTS
-
-## Requirements
-
-- PHP 8.2 or later
-- TYPO3 CMS 13.4 LTS
-- [friendsoftypo3/visual-editor](https://github.com/FriendsOfTYPO3/visual-editor)
+---
 
 ## Installation
 
@@ -26,52 +15,26 @@ A TYPO3 extension providing custom content elements for structured page building
 composer require maispace/mai-elements
 ```
 
-Activate the extension in the TYPO3 Extension Manager, then include the TypoScript:
-
-```typoscript
-@import 'EXT:mai_elements/Configuration/TypoScript/setup.typoscript'
-```
-
-Or use the TYPO3 Site Set `Elements` in your site configuration.
+---
 
 ## Development
 
-Install dependencies:
+### Linting
 
 ```bash
-composer install
+composer lint:check     # Run all linters
+composer lint:fix       # Fix auto-fixable issues
 ```
 
-Run all linters:
+### Testing
 
 ```bash
-composer lint:check
+composer test           # Run all tests
+composer test:unit      # Run unit tests only
 ```
 
-Fix auto-fixable issues:
-
-```bash
-composer lint:fix
-```
-
-Run unit tests:
-
-```bash
-composer test:unit
-```
-
-Run PHPStan static analysis:
-
-```bash
-composer check:phpstan
-```
-
-Run TypoScript lint:
-
-```bash
-composer check:typoscript
-```
+---
 
 ## License
 
-This extension is published under the [GNU General Public License v2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) or later.
+GPL-2.0-or-later — see [LICENSE](../../LICENSE) for details.

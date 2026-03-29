@@ -1,4 +1,0 @@
-name: maispace/elements
-label: 'MaiSpace Elements'
-dependencies:
-  - maispace/base
