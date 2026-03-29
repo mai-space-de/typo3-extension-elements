@@ -5,7 +5,7 @@
 
 A collection of custom content elements extending the default TYPO3 content element set. Owns the CKEditor rich text configuration and the TYPO3 form framework integration for the project. All element templates reference `mai_theme` components.
 
-**Requires:** TYPO3 13.4 LTS / 14.0 · PHP 8.2+
+**Requires:** TYPO3 13.4 LTS / 14.1 · PHP 8.2+
 
 ---
 
